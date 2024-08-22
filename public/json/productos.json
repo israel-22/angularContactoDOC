@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "nombre": "Squir",
+    "precio": 300,
+    "imagen": "img/squir.png",
+    "tipo":1
+  },
+
+  {
+    "id": 2,
+    "nombre": "Gibson",
+    "precio": 800,
+    "imagen": "img/gibson.jpg",
+    "tipo": 2
+  },
+  {
+    "id": 3,
+    "nombre": "Bajo",
+    "precio": 400,
+    "imagen": "img/bajo.jpg",
+    "tipo": 3
+  },
+
+  {
+    "id": 4,
+    "nombre": "Violin",
+    "precio": 200,
+    "imagen": "img/violin.jpg",
+    "tipo": 4
+  },
+  {
+    "id": 5,
+    "nombre": "Bateria",
+    "precio": 3500,
+    "imagen": "img/bateria.jpg",
+    "tipo": 5
+  }
+]
