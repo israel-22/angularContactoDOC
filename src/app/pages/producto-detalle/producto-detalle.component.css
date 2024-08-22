@@ -1,36 +1,54 @@
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center; /* Centra las tarjetas horizontalmente */
-    padding: 1rem;
-  }
-  
-  .card {
+.producto-detalle {
     border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    background-color: #fff;
-    margin: 1rem;
   }
   
-  .card img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
-    height: auto; /* Mantiene la proporción de la imagen */
+  .producto-nombre {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
   }
   
-  .card-body {
-    padding: 1rem;
+  .producto-imagen-container {
+    text-align: center;
+    margin-bottom: 20px;
   }
   
-  .card-title {
-    margin-bottom: 0.5rem;
+  .producto-imagen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
   
-  .card-text {
-    color: #666;
+  .producto-info {
+    font-size: 18px;
+    color: #555;
   }
+  
+  .producto-info p {
+    margin: 10px 0;
+  }
+  
+  .btn-comprar {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-comprar:hover {
+    background-color: #218838;
+  }
+
   .footer {
     background-color: #343a40;
     color: #ffffff;

@@ -1,0 +1,104 @@
+/* Estilo para el texto del precio */
+.carousel-caption p {
+    color: #ff5722; /* Color naranja para el precio */
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Estilo para el título del producto */
+  .carousel-caption h5 {
+    color: #ffffff; /* Blanco para destacar sobre la imagen */
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra para mejor visibilidad */
+  }
+  
+  /* Estilo para el fondo del texto en el carrusel */
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para resaltar el texto */
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Estilo para los íconos de los botones del carrusel */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #ff5722; /* Color naranja para los botones */
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  /* Estilo para los botones de control del carrusel */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px; /* Ajusta el tamaño del botón */
+  }
+  
+  /* Estilo para el contenedor del carrusel */
+  .carousel {
+    margin: 20px auto; /* Centra el carrusel con margen superior e inferior */
+    max-width: 80%; /* Ajusta el ancho del carrusel */
+  }
+  .carousel-inner {
+    max-height: 100%; /* Ajusta la altura máxima del carrusel según tus necesidades */
+    overflow: hidden; /* Oculta el desbordamiento si alguna imagen es más grande */
+  }
+  
+  .carousel-inner img {
+    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor sin deformarse */
+    height: 100%; /* La imagen ocupa toda la altura del contenedor */
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  }
+  
+  .carousel-inner img {
+    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor sin deformarse */
+    height: 100%; /* La imagen ocupa toda la altura del contenedor */
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  }
+  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+  }
+  
+  .footer .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .footer .row {
+    margin-bottom: 20px;
+  }
+  
+  .footer h5 {
+    margin-bottom: 15px;
+  }
+  
+  .footer ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+    color: #ffffff;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #495057;
+    padding-top: 10px;
+    text-align: center;
+  }
+  
