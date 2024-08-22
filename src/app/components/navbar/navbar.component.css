@@ -1,0 +1,63 @@
+/* Estilos generales de la barra de navegación */
+.navbar {
+    background-color: #f8f9fa; /* Gris claro para el fondo */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    border-bottom: 2px solid #e0a800; /* Borde inferior naranja */
+  }
+  
+  .navbar-brand {
+    color: #343a40; /* Texto negro */
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-brand:hover {
+    color: #e0a800; /* Color naranja al pasar el ratón */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #343a40; /* Texto negro */
+    margin-right: 1rem;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #e0a800; /* Color naranja al pasar el ratón */
+  }
+  
+  .navbar-toggler {
+    border: none; /* Elimina el borde del botón de menú */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,..."); /* Imagen del icono del menú (puedes cambiarlo si es necesario) */
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos de navegación */
+  }
+  
+  .nav-link.active {
+    border-bottom: 2px solid #e0a800; /* Línea de debajo del enlace activo en naranja */
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      background-color: #f8f9fa; /* Fondo gris claro del menú desplegable */
+    }
+  
+    .navbar-nav .nav-link {
+      margin-right: 0;
+      padding: 1rem;
+      color: #343a40; /* Texto negro en el menú desplegable */
+    }
+  
+    .navbar-nav .nav-link:hover {
+      color: #e0a800; /* Color naranja al pasar el ratón en el menú desplegable */
+    }
+  }
+  
