@@ -2,7 +2,7 @@
 <div class="producto-detalle card mb-4 shadow-sm">
   <div class="card-body">
     <h2 class="card-title text-center">{{ producto?.nombre }}</h2>
-    <img [src]="producto?.imagen" [alt]="producto?.nombre" class="img-fluid rounded mx-auto d-block my-3">
+    <img [src]="producto?.imagen" alt="producto?.nombre" class="img-fluid rounded mx-auto d-block my-3">
     <p class="card-text"><strong>Precio:</strong> {{ producto?.precio | currency:'USD':true }}</p>
     <p class="card-text"><strong>Tipo:</strong> {{ producto?.tipo }}</p>
     <div class="text-center">

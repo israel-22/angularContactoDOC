@@ -4,8 +4,8 @@
   <div class="row">
     <div class="col-md-4" *ngFor="let producto of Productos">
       <div class="card" style="width: 18rem;">
-        <img [src]="producto.imagen" class="card-img-top" [alt]="producto.nombre">
-        <div class="card-body">
+        <img [src]="producto.imagen" class="card-img-top" alt="producto.nombre">
+       <div class="card-body">
           <h5 class="card-title">{{ producto.nombre }}</h5>
           <p class="card-text">Precio: {{ producto.precio | currency }}</p>
           <p class="card-text">Tipo: {{ producto.tipo }}</p>
