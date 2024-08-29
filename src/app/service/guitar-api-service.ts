@@ -2,20 +2,22 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { Producto } from '../utils/productos';
 
 @Injectable({
   providedIn: 'root'
 })
-export class GuitarApiServiceService {
+export class GuitarApiService {
   private apiUrl = 'https://guitar-api.herokuapp.com'; // URL de la API musica
 
   constructor(private http: HttpClient) { }
 
-  getManufacturers(): Observable<any> {
+  getManufacturers(): Observable<Producto[]> {
     const headers = new HttpHeaders({
       'Authorization': 'Basic ' + btoa('admin:1234')
     });
-    return this.http.get(`${this.apiUrl}/manufacturers`, { headers }).pipe(
+    return this.http.get<Producto[]>(`${this.apiUrl}/manufacturers`)
+    .pipe(
       catchError(this.handleError)
     );
   }

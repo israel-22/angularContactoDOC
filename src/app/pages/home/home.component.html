@@ -4,12 +4,13 @@
 <div id="carouselOfertas" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div *ngFor="let producto of Productos; let isFirst = first" [ngClass]="{ 'carousel-item': true, 'active': isFirst }">
-      <!-- <img [src]="producto.imagen" 
-     class="d-block w-100" 
-     [alt]="producto.nombre ? producto.nombre : 'Imagen del producto'" 
-     [title]="producto.nombre ? producto.nombre : 'Imagen del producto'"> -->
       <img [src]="producto.imagen" class="d-block w-100" alt="producto.nombre">
-     <!-- <img [src]="producto.imagen" class="d-block w-100" [alt]="producto.nombre ? producto.nombre : 'Imagen del producto'"> -->
+      <img [src]="'/img/' + producto.imagen" class="d-block w-100" alt="{{ producto.nombre }}">
+      
+      <img src="/img/tu-imagen.jpg" alt="Descripción de la imagen">
+
+
+
       <div class="carousel-caption d-none d-md-block">
         <h5>{{ producto.nombre }}</h5>
         <p>Precio: {{ producto.precio | currency }}</p>

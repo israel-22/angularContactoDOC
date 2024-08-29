@@ -1,1 +1,26 @@
 <p>guitar-list-component works!</p>
+
+<div *ngIf="manufacturers.length > 0; else noData">
+    <ul>
+      <li *ngFor="let manufacturer of manufacturers">
+        <h3>{{ manufacturer.name }}</h3>
+        <p>Fundada en: {{ manufacturer.foundedYear }}</p>
+        <p>Lugar de fundación: {{ manufacturer.foundedPlace }}</p>
+        <p>Fundador: {{ manufacturer.founder }}</p>
+        <p>Sede: {{ manufacturer.headquarters }}</p>
+        <p>Área de servicio: {{ manufacturer.areaServed }}</p>
+        <a [href]="'https://' + manufacturer.website" target="_blank">Visitar Sitio Web</a>
+        <div *ngIf="manufacturer.logoBase64">
+          <img [src]="manufacturer.logoBase64" alt="Logo de {{ manufacturer.name }}">
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <ng-template #noData>
+    <p>No se encontraron fabricantes.</p>
+  </ng-template>
+  
+  <div *ngIf="errorMessage">
+    <p>Error: {{ errorMessage }}</p>
+  </div>
