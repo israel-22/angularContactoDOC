@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GuitarListComponentComponent } from './guitar-list-component.component';
+import { GuitarListComponent } from './guitar-list-component';
 
 describe('GuitarListComponentComponent', () => {
-  let component: GuitarListComponentComponent;
-  let fixture: ComponentFixture<GuitarListComponentComponent>;
+  let component: GuitarListComponent;
+  let fixture: ComponentFixture<GuitarListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GuitarListComponentComponent]
+      imports: [GuitarListComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GuitarListComponentComponent);
+    fixture = TestBed.createComponent(GuitarListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

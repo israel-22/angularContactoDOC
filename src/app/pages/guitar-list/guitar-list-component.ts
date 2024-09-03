@@ -4,7 +4,7 @@ import { Producto } from '../../utils/productos'; // Importa la interfaz Product
 
 @Component({
   selector: 'app-guitar-list',
-  templateUrl: './guitar-list-component.component.html',
+  templateUrl: './guitar-list-component.html',
   styleUrls: ['./guitar-list-component.css']
 })
 export class GuitarListComponent implements OnInit {

@@ -5,7 +5,7 @@ import { Error404Component } from './pages/error404/error404.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { ProductoDetalleComponent } from './pages/producto-detalle/producto-detalle.component'; // Asegúrate de que la ruta sea correcta
-import { GuitarListComponent } from './pages/guitar-list/guitar-list-component.component';
+import { GuitarListComponent } from './pages/guitar-list/guitar-list-component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
