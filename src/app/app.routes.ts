@@ -6,12 +6,12 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { ProductoDetalleComponent } from './pages/producto-detalle/producto-detalle.component'; // Asegúrate de que la ruta sea correcta
-
+import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'nosotros', component: NosotrosComponent },
-  { path: 'productos', component: ProductosComponent },
+  { path: 'productos', component: ProductosComponent ,...canActivate (()=>redirectUnauthorizedTo(['/login']))},
   { path: 'productos/:id', component: ProductoDetalleComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },

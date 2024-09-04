@@ -13,6 +13,7 @@ import * as productos from '../../../../public/json/productos.json';
 })
 export class ProductosComponent {
   Productos: Productos[] = (productos as any).default;
+  form: any;
 
   constructor(private router: Router) {}
 
