@@ -18,25 +18,22 @@ registerLocaleData(en);
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }), 
-    provideRouter(routes),
-    provideHttpClient(), 
+    provideRouter(routes), provideFirebaseApp(() =>
+       initializeApp({"projectId":"autonoma-84d41",
+        "appId":"1:525989852167:web:0526a189d779a04ced66a2",
+        "storageBucket":"autonoma-84d41.appspot.com",
+        "apiKey":"AIzaSyAp8yfaWbz7g-xzBSyN89J1gaTNo9ogNak",
+        "authDomain":"autonoma-84d41.firebaseapp.com",
+        "messagingSenderId":"525989852167",
+        "measurementId":"G-0HQDYY46CQ"})), 
+        provideAuth(() => getAuth()),
+         provideAnalytics(() => getAnalytics()), 
+         ScreenTrackingService, UserTrackingService,
+          provideFirestore(() => getFirestore()), 
+          provideStorage(() => getStorage()),
+
          
-           provideStorage(() => getStorage()),
-            provideFirebaseApp(() => initializeApp({
-              apiKey: "AIzaSyAp8yfaWbz7g-xzBSyN89J1gaTNo9ogNak",
-              authDomain: "autonoma-84d41.firebaseapp.com",
-              projectId: "autonoma-84d41",
-              storageBucket: "autonoma-84d41.appspot.com",
-              messagingSenderId: "525989852167",
-              appId: "1:525989852167:web:0526a189d779a04ced66a2",
-              measurementId: "G-0HQDYY46CQ"})), 
-              provideAuth(() => getAuth()), 
-              provideAnalytics(() => getAnalytics()),
-               ScreenTrackingService, UserTrackingService,
-                provideFirestore(() => getFirestore()),
-                 provideStorage(() => getStorage()),
-                  importProvidersFrom(FormsModule), 
-                 provideAnimationsAsync(), provideHttpClient(),
+        
   ]
                  
 };

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "contactoDoc": {
+    "contactodoc": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "contactoDoc:build:production"
+              "buildTarget": "contactodoc:build:production"
             },
             "development": {
-              "buildTarget": "contactoDoc:build:development"
+              "buildTarget": "contactodoc:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -14,8 +14,10 @@ export const routes: Routes = [
   { path: 'productos', component: ProductosComponent },
   { path: 'productos/:id', component: ProductoDetalleComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '**', component: Error404Component },
   { path: 'login', component: LoginComponent },
+  // todo va arriba del error
+  { path: '**', component: Error404Component },
+  
   
 ];
 

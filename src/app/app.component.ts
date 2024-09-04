@@ -11,5 +11,5 @@ import { HomeComponent } from "./pages/home/home.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'contactoDoc';
+  title = 'contactodoc';
 }
