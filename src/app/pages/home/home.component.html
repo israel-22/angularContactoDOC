@@ -33,6 +33,11 @@
   <div class="carousel-inner">
     <div *ngFor="let producto of Productos; let isFirst = first" [ngClass]="{ 'carousel-item': true, 'active': isFirst }">
       <img [src]="producto.imagen" class="d-block w-100" alt="producto.nombre">
+
+    <!--------Correccion de Imagenes----->>
+      <!-- <img src="/img/bajo.jpg" alt="Descripción de la imagen">
+      <img [src]="'/img/' + producto.imagen" class="d-block w-100" alt="{{ producto.nombre }}"> -->
+
       <div class="carousel-caption d-none d-md-block">
         <h5>{{ producto.nombre }}</h5>
         <p>Precio: {{ producto.precio | currency }}</p>
@@ -53,7 +58,9 @@
       <div class="row">
         <div class="col-md-4">
           <h5>Sobre Nosotros</h5>
-          <p>Ofrecemos una amplia gama de instrumentos musicales y accesorios de alta calidad. Nuestro objetivo es apoyar a músicos de todos los niveles con productos excepcionales y un excelente servicio al cliente.</p>
+          <p>Ofrecemos una amplia gama de instrumentos musicales y accesorios de alta calidad. 
+            Nuestro objetivo es apoyar a músicos de todos los niveles con productos excepcionales
+             y un excelente servicio al cliente.</p>
         </div>
         <div class="col-md-4">
           <h5>Enlaces Rápidos</h5>
